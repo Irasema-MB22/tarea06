@@ -1,0 +1,249 @@
+
+h2{
+  text-align: center;
+}
+ul.acorh {
+margin: 10px auto;
+padding: 0;
+list-style:none;
+width: 30%;
+font-size: 18px;
+
+}
+
+ul.acorh li a {
+display: block;
+padding: 3px 3px 3px 7px;
+background: #333;
+color: #eee;
+border-bottom: 1px solid #000;
+border-top: 1px solid #666;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+ul.acorh li li a {
+padding: 10px 10px 10px 40px;
+background: #999;
+color: #000;
+font-size: 16px;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+
+@-webkit-keyframes drawIn {
+  0% {
+    stroke: transparent;
+    stroke-dashoffset: 10000;
+  }
+  75% {
+    stroke: white;
+  }
+}
+@keyframes drawIn {
+  0% {
+    stroke: transparent;
+    stroke-dashoffset: 10000;
+  }
+  75% {
+    stroke: white;
+  }
+}
+html,
+body {
+  height: 100%;
+  background: #f2f2f2;
+  background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+}
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  width: 550px;
+}
+.mask-path {
+  stroke: white;
+  stroke-dasharray: 10000;
+  -webkit-animation: drawIn 2.5s 1s ease-in both;
+          animation: drawIn 2.5s 1s ease-in both;
+}
+
+h1 {
+    font-family:lobster;
+    text-align: left;  
+    font-weight: bold; 
+    font-size: 60px; 
+    color: #fff; 
+    text-align: center;
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+    }
+
+
+    .injected-text {
+      margin-bottom: -25px;
+      text-align: left;
+    }
+  
+    .box {
+      border-style: solid;
+      border-color: rgb(255, 255, 255);
+      border-width: 5px;
+      text-align: left;
+      height: 150px;
+      width: 200px;
+      border-radius: 7px;
+      margin-right:auto ;
+      margin-left:auto ;
+      width: 190px;
+      height: 190px;
+      
+    }
+  
+    .yellow-box {
+      background-color: rgb(235, 235, 178);
+      padding: 5px;
+    }
+  
+    .red-box {
+      background-color: rgb(192, 3, 41);
+      color: #fff;
+      height: 15px;
+      width: 20px;
+      padding-right:30px;
+      padding-bottom:10px;
+      padding-left:15px;
+      padding-top:15px;
+    }
+  
+    .blue-box {
+      background-color: rgb(0, 183, 255);
+      color: #fff;
+      height: 15px;
+      width: 20px;
+      padding-right:30px;
+      padding-bottom:10px;
+      padding-left:15px;
+      padding-top:15px;
+    }
+
+    #searchbar {
+      position: absolute;
+         top:15px;
+         right:0px;
+         left: 500px;
+     
+     
+       }
+       section {
+         position: relative;
+       }
+
+       .ball {
+        width: 100px;
+        height: 100px;
+        margin: 50 auto;
+        position: relative;
+        background: linear-gradient(
+          35deg,
+          #ccffff,
+          #ffcccc
+        );
+        border-style: solid;
+        border-color: rgb(107, 106, 106);
+        border-radius: 10%;
+      }
+      #ball1 {
+        left: 20%;
+        font-family:Arial;
+        font-size:9px;
+      }
+      #ball2 {
+        left: 65%;
+        transform: scale(2);
+        font-family:Arial;
+        font-size:7px;
+    
+      }
+      .aniibuton {
+        border-radius: 5px;
+        color: white;
+        background-color: #0F5897;
+        padding: 5px 10px 8px 10px;
+        position: absolute;
+      }
+    
+      @keyframes background-color {
+        100% {
+          background-color: #4791d0;
+          }
+    }
+      .aniibuton:hover {
+        animation-name: background-color;
+        animation-duration: 400ms;
+        position: absolute;
+      }
+      .centerboton{
+        margin-right:auto ;
+        margin-left:auto ;
+        width: 190px;
+        height: 190px;
+      }
+    
+      .mov {
+        height: 40px;
+        width: 70%;
+        background: black;
+        margin: 50px auto;
+        border-radius: 5px;
+        position: relative;
+        margin-right:auto ;
+        margin-left:auto ;
+        width: 190px;
+        height: 190px;
+        animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+      }
+    
+      #rect {
+        animation-name: rainbow;
+        animation-duration: 4s;
+      }
+    
+      @keyframes rainbow {
+        0% {
+          background-color: rgb(255, 107, 248);
+          left: 0px;
+          top: 0px;
+    
+        }
+        50% {
+          background-color: rgb(111, 243, 236);
+          left: 25px;
+          top: 50px;
+    
+        }
+        100% {
+          background-color: rgb(252, 252, 49);
+          left: -25px;
+          top: 0px;
+    
+        }
+        
+      }
+.fecha{
+  margin-right:auto ;
+  margin-left:auto ;
+  width: 190px;
+  height: 190px;
+}
+
+    
+  
